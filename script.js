@@ -1,5 +1,4 @@
 const revealElements = document.querySelectorAll('.reveal, .reveal-photo');
-
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -8,7 +7,6 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.15 });
-
 revealElements.forEach((el) => observer.observe(el));
 
 const countup = document.querySelector('[data-countup]');
@@ -37,4 +35,13 @@ if (countup) {
   }, { threshold: 0.4 });
 
   countObserver.observe(countup);
+}
+
+const menuToggle = document.querySelector('.menu-toggle');
+const mainNav = document.querySelector('.main-nav');
+if (menuToggle && mainNav) {
+  menuToggle.addEventListener('click', () => {
+    const open = mainNav.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(open));
+  });
 }
