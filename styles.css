@@ -37,7 +37,7 @@ button, input, textarea { font: inherit; }
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: var(--zwart);
+  background: var(--wit);
 }
 .nav {
   display: grid;
@@ -50,11 +50,6 @@ button, input, textarea { font: inherit; }
   display: flex;
   align-items: center;
   gap: 14px;
-  color: var(--wit);
-  font-family: 'Oswald', sans-serif;
-  font-size: 24px;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
 }
 .brand-logo, .footer-logo {
   width: 56px;
@@ -69,7 +64,7 @@ button, input, textarea { font: inherit; }
 }
 .main-nav a {
   position: relative;
-  color: var(--wit);
+  color: var(--zwart);
   font-family: 'Source Serif 4', serif;
   font-size: 13px;
   font-weight: 500;
@@ -137,7 +132,7 @@ button, input, textarea { font: inherit; }
   display: none;
   background: transparent;
   border: 0;
-  color: var(--wit);
+  color: var(--zwart);
   font-size: 28px;
 }
 
