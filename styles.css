@@ -152,6 +152,19 @@ h3 { font-size: 22px; }
   padding-top: 20px;
 }
 
+.whatsapp-float {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 30;
+  background: #25D366;
+  color: white;
+  font-weight: 800;
+  padding: 14px 18px;
+  border-radius: 999px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+
 @media (max-width: 900px) {
   .hero-grid, .two-col, .trust-grid, .cards, .cta-panel, .footer-row {
     grid-template-columns: 1fr;
@@ -160,4 +173,8 @@ h3 { font-size: 22px; }
   nav { display: none; }
   h1, h2 { max-width: none; }
   .cta-panel { align-items: flex-start; }
+  .whatsapp-float {
+    right: 14px;
+    bottom: 14px;
+  }
 }
